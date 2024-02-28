@@ -1,0 +1,28 @@
+{
+    "name": "Tabnapping",
+    "description": "Tabnapping for chrome extension mv3",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+        "128": "img/icon.png"
+    },
+    "action": {
+        "default_icon": {
+            "128": "img/icon.png"
+        },
+        "default_popup": "html/popup.html",
+        "default_title": "Tabnapping"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
